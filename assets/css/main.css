@@ -2356,8 +2356,7 @@
 		}
 
 		.icon.style1:hover {
-			background-color: rgba(57, 145, 204, 0.5);
-			/*background-image: url('../../images/MagnifyingGlass.png');*/
+			background-color: rgba(98, 82, 150, 0.5);
 			cursor: pointer;
 		}
 
@@ -2369,6 +2368,14 @@
 		  content: ' ';
 			width: 175px;
 			height: 175px;
+		}
+
+		.icon.style1:hover > .magnifying-glass {
+			display: block;
+			position: relative;
+			height: 100px;
+			top: 35px;
+			left: 29px;
 		}
 
 		.icon.style2 {
@@ -2386,6 +2393,29 @@
 			transition: background-color 1s;
 		}
 
+		.icon.style3:hover {
+			background-color: rgba(158, 97, 137, 0.5);
+			cursor: pointer;
+		}
+
+		.icon.style3:before {
+			position: absolute;
+			top: -1px;
+			right: -1px;
+			background-color: inherit;
+			content: ' ';
+			width: 175px;
+			height: 175px;
+		}
+
+		.icon.style3:hover > .magnifying-glass {
+			display: block;
+			position: relative;
+			height: 100px;
+			top: 35px;
+			left: 29px;
+		}
+
 		.icon.style4 {
 			color: #9bb2e1;
 		}
@@ -2399,6 +2429,29 @@
 			-o-background-size: cover;
 			background-size: cover;
 			transition: background-color 1s;
+		}
+
+		.icon.style5:hover {
+			background-color: rgba(192, 110, 137, 0.5);
+			cursor: pointer;
+		}
+
+		.icon.style5:before {
+			position: absolute;
+			top: -1px;
+			right: -1px;
+			background-color: inherit;
+			content: ' ';
+			width: 175px;
+			height: 175px;
+		}
+
+		.icon.style5:hover > .magnifying-glass {
+			display: block;
+			position: relative;
+			height: 100px;
+			top: 35px;
+			left: 29px;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -3871,4 +3924,9 @@
 		    color: #000;
 		    text-decoration: none;
 		    cursor: pointer;
+		}
+
+		.magnifying-glass {
+			z-index: 100;
+			display: none;
 		}
