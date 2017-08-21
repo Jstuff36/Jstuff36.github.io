@@ -2345,13 +2345,30 @@
 			}
 
 		.icon.style1 {
-			background-image: url('../../images/landing_page.png');
 			width: 175px;
 			height: 175px;
+			background-image: url('../../images/landing_page.png');
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
+			transition: background-color 1s;
+		}
+
+		.icon.style1:hover {
+			background-color: rgba(57, 145, 204, 0.5);
+			/*background-image: url('../../images/MagnifyingGlass.png');*/
+			cursor: pointer;
+		}
+
+		.icon.style1:before {
+		  position: absolute;
+			top: -1px;
+			right: -1px;
+		  background-color: inherit;
+		  content: ' ';
+			width: 175px;
+			height: 175px;
 		}
 
 		.icon.style2 {
@@ -2359,7 +2376,14 @@
 		}
 
 		.icon.style3 {
-			color: #a89cc8;
+			width: 175px;
+			height: 175px;
+			background-image: url('../../images/pourover.png');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			transition: background-color 1s;
 		}
 
 		.icon.style4 {
@@ -2367,7 +2391,14 @@
 		}
 
 		.icon.style5 {
-			color: #8cc9f0;
+			width: 175px;
+			height: 175px;
+			background-image: url('../../images/gamePic.png');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			transition: background-color 1s;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -2851,7 +2882,6 @@
 		.features li {
 			width: calc(33.33333% - 2em);
 			margin-left: 2em;
-			margin-top: 3em;
 			padding: 0;
 		}
 
@@ -3841,8 +3871,4 @@
 		    color: #000;
 		    text-decoration: none;
 		    cursor: pointer;
-		}
-
-		.openModal:hover {
-			cursor: pointer;
 		}
