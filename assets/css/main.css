@@ -3842,3 +3842,7 @@
 		    text-decoration: none;
 		    cursor: pointer;
 		}
+
+		.openModal:hover {
+			cursor: pointer;
+		}
