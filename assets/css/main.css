@@ -3930,3 +3930,21 @@
 			z-index: 100;
 			display: none;
 		}
+
+		.email {
+			color: #605095;
+		}
+
+		.email:hover {
+			color: #605095 !important;
+			border-bottom: dotted 1px;
+		}
+
+		.skill {
+			font-size: 48px;
+		}
+
+		.skill + div {
+			padding: 10px 0;
+			font-size: 20px;
+		}
