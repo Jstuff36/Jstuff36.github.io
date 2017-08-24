@@ -2596,6 +2596,9 @@
 				}
 
 		ul.icons {
+			display: flex;
+			justify-content: center;
+			width: 100%;
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
@@ -3796,18 +3799,15 @@
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding: 5em 5em 3em 5em ;
-		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
 	}
 
 		#footer > * {
-			width: calc(50% - 2em);
 			margin-left: 2em;
 		}
 
 		#footer .copyright {
 			width: 100%;
-			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
 			text-align: center;
 		}
@@ -3911,7 +3911,7 @@
 		    border: 1px solid #888;
 		    width: 80%;
 				max-width: 750px;
-				height: 725px;
+				height: 700px;
   			border-radius: 5px;
 		}
 
