@@ -3910,6 +3910,9 @@
 		    padding: 20px;
 		    border: 1px solid #888;
 		    width: 80%;
+				max-width: 750px;
+				height: 725px;
+  			border-radius: 5px;
 		}
 
 		/* The Close Button */
@@ -3918,6 +3921,7 @@
 		    float: right;
 		    font-size: 28px;
 		    font-weight: bold;
+				margin-top: -15px;
 		}
 
 		.close:hover,
@@ -3963,4 +3967,12 @@
 
 		.portfolio-list li {
 			width: 90%;
+			padding: 10px;
+			margin-top: 0 !important;
+		}
+
+		.live-links {
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 10px;
 		}
