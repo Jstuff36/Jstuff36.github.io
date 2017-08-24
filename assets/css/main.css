@@ -3418,7 +3418,7 @@
 			background-color: rgba(247, 247, 247, 0.95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
-			z-index: 10000;
+			z-index: 1;
 		}
 
 			#nav.alt ul li {
@@ -3891,7 +3891,7 @@
 		.modal {
 		    display: none; /* Hidden by default */
 		    position: fixed; /* Stay in place */
-		    z-index: 1; /* Sit on top */
+		    z-index: 10; /* Sit on top */
 		    padding-top: 100px; /* Location of the box */
 		    left: 0;
 		    top: 0;
@@ -3904,6 +3904,7 @@
 
 		/* Modal Content */
 		.modal-content {
+				z-index: 10;
 		    background-color: #fefefe;
 		    margin: auto;
 		    padding: 20px;
@@ -3947,4 +3948,19 @@
 		.skill + div {
 			padding: 10px 0;
 			font-size: 20px;
+		}
+
+		.video {
+			width: 100%;
+			height: 400px;
+		}
+
+		.portfolio-list {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+		}
+
+		.portfolio-list li {
+			width: 90%;
 		}
