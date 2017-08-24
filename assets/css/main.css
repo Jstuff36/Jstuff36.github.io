@@ -3959,10 +3959,17 @@
 			height: 400px;
 		}
 
+		.video-link {
+			border-bottom: none;
+		}
+
+		.video:hover {
+		}
+
 		.portfolio-list {
 			display: flex;
 			flex-direction: column;
-			text-align: left;``
+			text-align: left;
 		}
 
 		.portfolio-list li {
