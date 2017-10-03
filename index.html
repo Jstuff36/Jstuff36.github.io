@@ -131,7 +131,7 @@
 											<img class="magnifying-glass" src="./images/MagnifyingGlass.png"></img>
 										</span>
 										<h3>PourOverJS</h3>
-										<p>Browser based JavaScript profiler and code editor built on the MERN stack.</p>
+										<p>Browser based JavaScript profiler and code editor. Built on the MERN stack.</p>
 									</li>
 
 									<!-- The Modal -->
@@ -216,34 +216,88 @@
 									</div>
 
 									<script>
+										// Get the modal
+										var ipoDefender = document.getElementById('ipoDefender');
+										// Get the button that opens the modal
+										var openIpoDefender = document.getElementsByClassName("openIpoDefender")[0];
+										// Get the <span> element that closes the modal
+										var closeIpoDefender = document.getElementsByClassName("closeIpoDefender")[0];
+										// When the user clicks the button, open the modal
+										openIpoDefender.onclick = function () {
+											ipoDefender.style.display = "block";
+										}
+										// When the user clicks on <span> (x), close the modal
+										closeIpoDefender.onclick = function () {
+											ipoDefender.style.display = "none";
+										}
+									</script>
+
+									<li>
+										<span class="icon major style7 openStockTracker5000">
+										<img class="magnifying-glass" src="./images/MagnifyingGlass.png"></img>
+										</span>
+										<h3>Stock Tracker 5000</h3>
+										<p>Frontend React.js app which allows one to easily track their favorite stocks overtime.</p>
+									</li>
+
+									<!-- The Modal -->
+									<div id="stockTracker5000" class="modal">
+										<!-- Modal content -->
+										<div class="modal-content">
+											<span class="closeStockTracker5000 close">&times;</span>
+											<div class="live-links">
+												<a href="http://justinwhite.me/stock-ticker-interface/#/">Live</a>
+												<a href="https://github.com/Jstuff36/stock-ticker-interface">Github</a>
+											</div>
+											<a class="video-link" href="http://justinwhite.me/stock-ticker-interface/#/">
+												<video src="stocktracker5000.mp4" autoplay class="video" loop></video>
+											</a>
+											<ul class="portfolio-list">
+												<li>
+													Queries Alpha Vantage API to receive stock data.
+												</li>
+												<li>
+													Plots stock prices over time using the Highcharts JavaScript library.
+												</li>
+												<li>
+													Uses Redux Persist to save stock data across browser refreshes and closes thus eliminating the need for a backend.
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<script>
 									// Get the modal
-									var ipoDefender = document.getElementById('ipoDefender');
+									var stockTracker5000 = document.getElementById('stockTracker5000');
 
 									// Get the button that opens the modal
-									var openIpoDefender = document.getElementsByClassName("openIpoDefender")[0];
+									var openStockTracker5000 = document.getElementsByClassName("openStockTracker5000")[0];
 
 									// Get the <span> element that closes the modal
-									var closeIpoDefender = document.getElementsByClassName("closeIpoDefender")[0];
+									var closeStockTracker5000 = document.getElementsByClassName("closeStockTracker5000")[0];
 
 									// When the user clicks the button, open the modal
-									openIpoDefender.onclick = function() {
-										ipoDefender.style.display = "block";
+									openStockTracker5000.onclick = function() {
+										stockTracker5000.style.display = "block";
 									}
 
 									// When the user clicks on <span> (x), close the modal
-									closeIpoDefender.onclick = function() {
-											ipoDefender.style.display = "none";
+									closeStockTracker5000.onclick = function() {
+											stockTracker5000.style.display = "none";
 									}
+									
 
 									// When the user clicks anywhere outside of the modal, close it
 									window.onclick = function(event) {
 											if (event.target == ipoDefender) {
-													ipoDefender.style.display = "none";
+												ipoDefender.style.display = "none";
 											} else if (event.target == pourOver) {
-									        pourOver.style.display = "none";
-									    } else if (event.target == openDoors) {
-									        openDoors.style.display = "none";
-									    }
+									        	pourOver.style.display = "none";
+											} else if (event.target == openDoors) {
+												openDoors.style.display = "none";
+											} else if (event.target == stockTracker5000) {
+												stockTracker5000.style.display = "none"
+											}
 										}
 									</script>
 								</ul>

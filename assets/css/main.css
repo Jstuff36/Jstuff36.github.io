@@ -2454,6 +2454,40 @@
 			left: 29px;
 		}
 
+		.icon.style7 {
+			width: 175px;
+			height: 175px;
+			background-image: url('https://res.cloudinary.com/dax5cdjeh/image/upload/v1507047711/Landing-Page_u6umbu.png');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			transition: background-color 1s;
+		}
+
+		.icon.style7:hover {
+			background-color: rgba(192, 110, 137, 0.5);
+			cursor: pointer;
+		}
+
+		.icon.style7:before {
+			position: absolute;
+			top: -1px;
+			right: -1px;
+			background-color: inherit;
+			content: ' ';
+			width: 175px;
+			height: 175px;
+		}
+
+		.icon.style7:hover > .magnifying-glass {
+			display: block;
+			position: relative;
+			height: 100px;
+			top: 35px;
+			left: 29px;
+		}
+
 		@media screen and (max-width: 1680px) {
 
 			.icon.major:before {
